@@ -84,8 +84,7 @@ HubotScriptGenerator.prototype.app = function app() {
   this.copy('gulpfile.js', 'gulpfile.js');
   this.copy('gitignore', '.gitignore');
   this.copy('gitattributes', '.gitattributes');
-  this.copy('.jscs.json', '.jscs.json');
-  this.copy('.jshintrc', '.jshintrc');
+  this.copy('coffeelint.json', 'coffeelint.json');
   this.copy('editorconfig', '.editorconfig');
   this.copy('.travis.yml', '.travis.yml');
   this.copy('index.coffee', 'index.coffee');
