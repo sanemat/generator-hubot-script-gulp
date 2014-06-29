@@ -5,14 +5,14 @@ var path    = require('path');
 var helpers = require('yeoman-generator').test;
 
 
-describe('hubot-script generator', function () {
+describe('hubot-script-gulp generator', function () {
   beforeEach(function (done) {
     helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
       if (err) {
         return done(err);
       }
 
-      this.app = helpers.createGenerator('hubot-script:app', [
+      this.app = helpers.createGenerator('hubot-script-gulp:app', [
         '../../app'
       ]);
       done();
@@ -42,7 +42,7 @@ describe('hubot-script generator', function () {
 
     this.app.options['skip-install'] = true;
     this.app.run({}, function () {
-      helpers.assertFiles(expected);
+      helpers.assertFile(expected);
       done();
     });
   });
