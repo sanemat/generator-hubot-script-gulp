@@ -82,7 +82,7 @@ HubotScriptGenerator.prototype.app = function app() {
   this.mkdir('test');
   this.copy('test/template-test.coffee', 'test/' + this.scriptName + '-test.coffee');
 
-  this.copy('Gruntfile.js', 'Gruntfile.js');
+  this.copy('gulpfile.js', 'gulpfile.js');
   this.copy('gitignore', '.gitignore');
   this.copy('.travis.yml', '.travis.yml');
   this.copy('index.coffee', 'index.coffee');
