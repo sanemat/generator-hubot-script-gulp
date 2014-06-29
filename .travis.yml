@@ -1,8 +1,9 @@
 language: node_js
-
 node_js:
   - '0.10'
   - '0.11'
-
 before_install:
-  - npm install -g grunt-cli
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-hubot-script-gulp' ]; then cd .. && eval "mv $currentfolder generator-hubot-script-gulp" && cd generator-hubot-script-gulp; fi
+after_script:
+  - npm run coveralls

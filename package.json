@@ -19,17 +19,22 @@
     "url": "https://github.com/sanemat/generator-hubot-script-gulp"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "gulp test",
+    "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "dependencies": {
     "yeoman-generator": "^0.17.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-mocha-cli": "~1.1.0",
-    "matchdep": "~0.1.2",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-release": "^0.7.0"
+    "coveralls": "^2.10.1",
+    "gulp": "^3.8.2",
+    "gulp-istanbul": "^0.2.0",
+    "gulp-jscs": "^0.5.0",
+    "gulp-jshint": "^1.6.3",
+    "gulp-load-plugins": "^0.5.2",
+    "gulp-mocha": "^0.4.1",
+    "gulp-plumber": "^0.6.3",
+    "jshint-stylish": "^0.2.0"
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
