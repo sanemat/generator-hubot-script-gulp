@@ -17,23 +17,25 @@
   },
 
   "dependencies": {
-    "coffee-script": "~1.6"
+    "coffee-script": "^1.7.0"
   },
 
   "devDependencies": {
-    "mocha": "*",
-    "chai": "*",
-    "sinon-chai": "*",
-    "sinon": "*",
-    "grunt-mocha-test": "~0.7.0",
-    "grunt-release": "~0.6.0",
-    "matchdep": "~0.1.2",
-    "grunt-contrib-watch": "~0.5.3"
+    "coveralls": "^2.10.1",
+    "gulp": "^3.8.2",
+    "gulp-istanbul": "^0.2.0",
+    "gulp-jscs": "^0.5.0",
+    "gulp-jshint": "^1.6.3",
+    "gulp-load-plugins": "^0.5.2",
+    "gulp-mocha": "^0.4.1",
+    "gulp-plumber": "^0.6.3",
+    "jshint-stylish": "^0.2.0"
   },
 
   "main": "index.coffee",
 
   "scripts": {
-    "test": "grunt test"
+    "test": "gulp test",
+    "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   }
 }
