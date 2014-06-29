@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var del = require('del');
+var es = require('event-stream');
 
 var paths = {
   lint: ['./gulpfile.js', './lib/**/*.js'],
@@ -19,6 +20,18 @@ gulp.task('lint', function(){
 
 gulp.task('clean', del.bind(null, ['./compile']));
 gulp.task('clean:coverage', del.bind(null, ['./coverage']));
+
+gulp.task('compile', ['lint'], function(){
+  es.merge(
+    gulp.src('./src/**/*.coffee')
+      .pipe($.coffee({bare: true, sourceMap: true}))
+      .pipe(gulp.dest('./compile/src')),
+    gulp.src('./test/**/*.coffee')
+      .pipe($.coffee({bare: true, sourceMap: true}))
+      .pipe(gulp.dest('./compile/test'))
+  );
+});
+
 gulp.task('istanbul', function (cb) {
   gulp.src(paths.source)
     .pipe($.istanbul()) // Covering files
