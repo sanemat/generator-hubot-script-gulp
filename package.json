@@ -1,27 +1,28 @@
 {
-  "name": "generator-hubot-script",
-  "version": "1.1.0",
-  "description": "A generator for Yeoman",
+  "name": "generator-hubot-script-gulp",
+  "version": "0.0.0",
+  "description": "Hubot script generator with gulp for yo",
   "keywords": [
     "yeoman-generator"
   ],
-  "homepage": "https://github.com/desmondmorris/generator-hubot-script",
-  "bugs": "https://github.com/desmondmorris/generator-hubot-script/issues",
+  "homepage": "https://github.com/sanemat/generator-hubot-script-gulp",
+  "bugs": "https://github.com/sanemat/generator-hubot-script-gulp/issues",
+  "license": "MIT",
   "author": {
-    "name": "Desmond Morris",
-    "email": "hi@desmondmorris.com",
-    "url": "https://github.com/desmondmorris"
+    "name": "Kenichi Sanemat Murahashi",
+    "email": "o.gata.ken@gmail.com",
+    "url": "https://github.com/sanemat"
   },
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/desmondmorris/generator-hubot-script.git"
+    "url": "https://github.com/sanemat/generator-hubot-script-gulp"
   },
   "scripts": {
     "test": "grunt test"
   },
   "dependencies": {
-    "yeoman-generator": "~0.13.0"
+    "yeoman-generator": "^0.17.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -31,16 +32,9 @@
     "grunt-release": "^0.7.0"
   },
   "peerDependencies": {
-    "yo": ">=1.0.0-rc.1"
+    "yo": ">=1.0.0"
   },
   "engines": {
-    "node": ">=0.8.0",
-    "npm": ">=1.2.10"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://raw.github.com/desmondmorris/generator-hubot-script/master/LICENSE"
-    }
-  ]
+    "node": ">=0.10.0"
+  }
 }
