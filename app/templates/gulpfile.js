@@ -6,10 +6,10 @@ var del = require('del');
 var es = require('event-stream');
 
 var paths = {
-  lint: ['./gulpfile.js', './lib/**/*.js'],
-  watch: ['./gulpfile.js', './lib/**/*.js', './test/**/*.js', '!test/{temp,temp/**}'],
+  lint: ['./gulpfile.js', './src/**/*.js'],
+  watch: ['./gulpfile.js', './src/**/*.js', './test/**/*.js', '!test/{temp,temp/**}'],
   tests: ['./test/**/*.js', '!test/{temp,temp/**}'],
-  source: ['./lib/**/*.js']
+  source: ['./src/**/*.js']
 };
 
 gulp.task('lint', function(){
