@@ -22,8 +22,6 @@ describe('hubot-script-gulp generator', function () {
   it('creates expected files', function (done) {
     var expected = [
       // add files you expect to exist here.
-      'script/bootstrap',
-      'script/test',
       'src/testscript.coffee',
       'test/testscript-test.coffee',
       '.gitignore',
