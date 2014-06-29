@@ -10,12 +10,10 @@ var paths = {
   source: ['./lib/**/*.js']
 };
 
-gulp.task('lint', function () {
-  return gulp.src(paths.lint)
-    .pipe($.plumber())
-    .pipe($.jshint('.jshintrc'))
-    .pipe($.jscs())
-    .pipe($.jshint.reporter('jshint-stylish'));
+gulp.task('lint', function(){
+  return gulp.src(['./src/**/*.coffee'])
+    .pipe($.coffeelint('./coffeelint.json'))
+    .pipe($.coffeelint.reporter());
 });
 
 gulp.task('istanbul', function (cb) {

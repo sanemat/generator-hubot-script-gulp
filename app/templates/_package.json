@@ -23,13 +23,11 @@
   "devDependencies": {
     "coveralls": "^2.10.1",
     "gulp": "^3.8.2",
+    "gulp-coffeelint": "^0.3.3",
     "gulp-istanbul": "^0.2.0",
-    "gulp-jscs": "^0.5.0",
-    "gulp-jshint": "^1.6.3",
     "gulp-load-plugins": "^0.5.2",
     "gulp-mocha": "^0.4.1",
-    "gulp-plumber": "^0.6.3",
-    "jshint-stylish": "^0.2.0"
+    "gulp-plumber": "^0.6.3"
   },
 
   "main": "index.coffee",
