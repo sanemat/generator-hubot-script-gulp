@@ -36,19 +36,20 @@ gulp.task('compile', ['lint'], function(){
   );
 });
 
-gulp.task('istanbul', function (cb) {
-  gulp.src(paths.source)
+gulp.task('istanbul', ['clean:coverage', 'compile'], function(cb){
+  gulp.src(['./compile/src/**/*.js'])
     .pipe($.istanbul()) // Covering files
-    .on('finish', function () {
-      gulp.src(paths.tests, {cwd: __dirname})
+    .on('finish', function(){
+      gulp.src(['./compile/test/**/*.js'], {cwd: __dirname})
         .pipe($.plumber())
         .pipe($.mocha())
         .pipe($.istanbul.writeReports()) // Creating the reports after tests runned
-        .on('finish', function() {
+        .on('finish', function(){
           process.chdir(__dirname);
           cb();
         });
     });
+  return undefined;
 });
 
 gulp.task('watch', ['test'], function () {
