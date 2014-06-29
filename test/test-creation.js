@@ -28,7 +28,7 @@ describe('hubot-script-gulp generator', function () {
       'test/testscript-test.coffee',
       '.gitignore',
       '.travis.yml',
-      'Gruntfile.js',
+      'gulpfile.js',
       'index.coffee',
       'package.json',
       'README.md'
