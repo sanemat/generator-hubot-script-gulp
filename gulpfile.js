@@ -10,13 +10,13 @@ var paths = {
   source: ['./app/index.js']
 };
 
-var isCI = function(envCI){
-  return envCI && envCI.toLocaleString() === 'true';
+var boolifyString = function(value){
+  return value && value.toLocaleString() === 'true';
 };
 
 gulp.task('lint', function () {
   return gulp.src(paths.lint)
-    .pipe($.if(!isCI(process.env.CI), $.plumber()))
+    .pipe($.if(!boolifyString(process.env.CI), $.plumber()))
     .pipe($.jshint('.jshintrc'))
     .pipe($.jscs())
     .pipe($.jshint.reporter('jshint-stylish'));
@@ -27,7 +27,7 @@ gulp.task('istanbul', function (cb) {
     .pipe($.istanbul()) // Covering files
     .on('finish', function () {
       gulp.src(paths.tests, {cwd: __dirname})
-        .pipe($.if(!isCI(process.env.CI), $.plumber()))
+        .pipe($.if(!boolifyString(process.env.CI), $.plumber()))
         .pipe($.mocha())
         .pipe($.istanbul.writeReports()) // Creating the reports after tests runned
         .on('finish', function() {
