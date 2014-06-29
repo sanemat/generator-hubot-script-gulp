@@ -3,7 +3,8 @@
 This repository forked from: [desmondmorris/generator-hubot-script](https://github.com/desmondmorris/generator-hubot-script)
 
 ## License
-
+### generator-hubot-script-gulp
 [MIT](./LICENSE)
 
-[MIT(original generator-hubot-script)](./generator-hubot-script/LICENSE)
+### original generator-hubot-script
+[MIT](./generator-hubot-script/LICENSE)
