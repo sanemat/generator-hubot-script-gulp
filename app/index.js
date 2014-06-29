@@ -14,11 +14,11 @@ var extractScriptName = function (_, appname) {
 
 var prepareKeywords = function(keywords) {
   var ky = keywords.split(',');
-  for (i = 0; i < ky.length; ++i) {
+  for (var i = 0; i < ky.length; ++i) {
     ky[i] = '"' + ky[i].trim() + '"';
   }
   return '[' + ky.join(',') + ']';
-}
+};
 
 var HubotScriptGenerator = module.exports = function HubotScriptGenerator(args, options, config) {
   yeoman.generators.Base.apply(this, arguments);
