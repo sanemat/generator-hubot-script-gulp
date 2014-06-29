@@ -57,7 +57,6 @@ HubotScriptGenerator.prototype.askFor = function askFor() {
     }
   ];
 
-
   this.prompt(prompts, function (props) {
     this.scriptName = props.scriptName.toLowerCase();
     this.appname = 'hubot-' + this.scriptName;
