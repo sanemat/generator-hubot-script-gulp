@@ -22,12 +22,16 @@ gulp.task('clean', del.bind(null, ['./compile']));
 gulp.task('clean:coverage', del.bind(null, ['./coverage']));
 
 gulp.task('compile', ['lint'], function(){
-  es.merge(
+  return es.merge(
     gulp.src('./src/**/*.coffee')
-      .pipe($.coffee({bare: true, sourceMap: true}))
+      .pipe($.sourcemaps.init())
+      .pipe($.coffee({ bare: true }).on('error', $.util.log))
+      .pipe($.sourcemaps.write())
       .pipe(gulp.dest('./compile/src')),
     gulp.src('./test/**/*.coffee')
-      .pipe($.coffee({bare: true, sourceMap: true}))
+      .pipe($.sourcemaps.init())
+      .pipe($.coffee({ bare: true }).on('error', $.util.log))
+      .pipe($.sourcemaps.write())
       .pipe(gulp.dest('./compile/test'))
   );
 });
