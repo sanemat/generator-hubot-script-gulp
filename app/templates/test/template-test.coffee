@@ -1,4 +1,4 @@
-assert = require 'assert'
+assert = require 'power-assert'
 sinon = require 'sinon'
 
 describe '<%= scriptName %>', ->
@@ -10,7 +10,7 @@ describe '<%= scriptName %>', ->
     require('../src/<%= scriptName %>')(@robot)
 
   it 'registers a respond listener', ->
-    assert(@robot.respond.calledWith(/hello/))
+    assert.ok(@robot.respond.calledWith(/hello/))
 
   it 'registers a hear listener', ->
-    assert(@robot.hear.calledWith(/orly/))
+    assert.ok(@robot.hear.calledWith(/orly/))
