@@ -3,6 +3,46 @@
 
 This repository forked from: [desmondmorris/generator-hubot-script](https://github.com/desmondmorris/generator-hubot-script)
 
+This generator provides:
+  - hubot-script based on [standard example](https://github.com/hubot-scripts/hubot-example)
+  - coffeescript
+  - gulp
+  - coffeelint
+  - code coverage (istanbul)
+  - travis-ci ready
+  - coveralls ready
+  - mocha
+  - sinon
+  - power-assert
+
+```
+$ tree -I 'node_modules|.idea' -a
+.
+├── .editorconfig
+├── .gitattributes
+├── .gitignore
+├── .travis.yml
+├── LICENSE
+├── README.md
+├── coffeelint.json
+├── gulpfile.coffee
+├── index.coffee
+├── package.json
+├── src
+│   └── you-want-to-generate.coffee
+└── test
+    └── you-want-to-generate-test.coffee
+```
+
+## Install
+```
+npm install -g generator-hubot-script-gulp yo
+mkdir -p you-want-to-generate
+cd you-want-to-generate
+yo hubot-script-gulp
+```
+done!
+
 ## License
 ### generator-hubot-script-gulp
 Copyright (c) 2014 sanemat. [Licensed under the MIT license](./LICENSE)
