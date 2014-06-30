@@ -36,9 +36,8 @@ $ tree -I 'node_modules|.idea' -a
 
 ## Install
 ```
-npm install -g generator-hubot-script-gulp yo
-mkdir -p you-want-to-generate
-cd you-want-to-generate
+npm install generator-hubot-script-gulp -g
+mkdir hubot-you-want-to-generate && cd $_
 yo hubot-script-gulp
 ```
 done!
