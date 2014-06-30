@@ -44,6 +44,7 @@ gulp.task 'compile', ['lint'], ->
       .pipe $.sourcemaps.init()
       .pipe($.coffee({ bare: true }).on('error', $.util.log))
       .pipe $.sourcemaps.write()
+      .pipe $.espower()
       .pipe gulp.dest('./compile/test')
   )
 
