@@ -30,7 +30,7 @@ describe('hubot-script-gulp generator', function () {
       'coffeelint.json',
       '.editorconfig',
       '.travis.yml',
-      'gulpfile.js',
+      'gulpfile.coffee',
       'index.coffee',
       'package.json',
       'README.md'
