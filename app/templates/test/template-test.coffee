@@ -1,8 +1,5 @@
-chai = require 'chai'
+assert = require 'assert'
 sinon = require 'sinon'
-chai.use require 'sinon-chai'
-
-expect = chai.expect
 
 describe '<%= scriptName %>', ->
   beforeEach ->
@@ -13,7 +10,7 @@ describe '<%= scriptName %>', ->
     require('../src/<%= scriptName %>')(@robot)
 
   it 'registers a respond listener', ->
-    expect(@robot.respond).to.have.been.calledWith(/hello/)
+    assert(@robot.respond.calledWith(/hello/))
 
   it 'registers a hear listener', ->
-    expect(@robot.hear).to.have.been.calledWith(/orly/)
+    assert(@robot.hear.calledWith(/orly/))

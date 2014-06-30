@@ -32,7 +32,8 @@
     "gulp-mocha": "^0.4.1",
     "gulp-plumber": "^0.6.3",
     "gulp-sourcemaps": "^0.4.1",
-    "gulp-util": "^2.2.19"
+    "gulp-util": "^2.2.19",
+    "sinon": "^1.10.2"
   },
 
   "main": "index.coffee",
