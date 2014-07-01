@@ -1,3 +1,9 @@
+## 0.1.1
+
+Features:
+
+- If ci environment, then do not use plumber for catch error(#9, @sanemat)
+
 ## 0.1.0 (2014-06-30)
 
 Features:
