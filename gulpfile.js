@@ -2,16 +2,13 @@
 
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
+var boolifyString = require('boolify-string');
 
 var paths = {
   lint: ['./gulpfile.js', './app/index.js'],
   watch: ['./gulpfile.js', './app/index.js', './test/**/*.js', '!test/{temp,temp/**}'],
   tests: ['./test/**/*.js', '!test/{temp,temp/**}'],
   source: ['./app/index.js']
-};
-
-var boolifyString = function(value){
-  return value && value.toLocaleString() === 'true';
 };
 
 gulp.task('lint', function () {

@@ -4,6 +4,7 @@ gulp = require 'gulp'
 $ = (require 'gulp-load-plugins') lazy: false
 del = require 'del'
 es = require 'event-stream'
+boolifyString = require 'boolify-string'
 
 paths =
   lint: [
@@ -54,7 +55,7 @@ gulp.task 'istanbul', ['clean:coverage', 'compile'], (cb) ->
     .pipe $.istanbul()
     .on 'finish', ->
       gulp.src ['./compile/test/**/*.js'], {cwd: __dirname}
-        .pipe $.plumber()
+        .pipe $.if(!boolifyString(process.env.CI), $.plumber())
         .pipe $.mocha()
         #Creating the reports after tests runned
         .pipe $.istanbul.writeReports()
