@@ -48,6 +48,7 @@ gulp.task 'compile', ['lint'], ->
       .pipe $.espower()
       .pipe gulp.dest('./compile/test')
   )
+  undefined
 
 gulp.task 'istanbul', ['clean:coverage', 'compile'], (cb) ->
   gulp.src ['./compile/src/**/*.js']
