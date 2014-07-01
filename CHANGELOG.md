@@ -1,3 +1,9 @@
+## 0.1.2 (2014-07-01)
+
+Fixes:
+
+- generated project's `gulp compile` should return undefined(#10, @sanemat)
+
 ## 0.1.1 (2014-07-01)
 
 Features:
