@@ -26,6 +26,7 @@
     "yeoman-generator": "^0.17.0"
   },
   "devDependencies": {
+    "boolify-string": "^0.1.0",
     "coveralls": "^2.10.1",
     "gulp": "^3.8.2",
     "gulp-if": "^1.2.1",
