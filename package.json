@@ -1,6 +1,6 @@
 {
   "name": "generator-hubot-script-gulp",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Hubot script generator with gulp for yo",
   "keywords": [
     "yeoman-generator"
