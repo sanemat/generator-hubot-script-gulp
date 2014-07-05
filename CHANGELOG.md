@@ -1,3 +1,9 @@
+## 0.1.3 (2014-07-06)
+
+Fixes:
+
+- Pick user name from git config(#11, @sanemat)
+
 ## 0.1.2 (2014-07-01)
 
 Fixes:
