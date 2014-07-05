@@ -72,8 +72,8 @@ HubotScriptGenerator.prototype.askFor = function askFor() {
 
 HubotScriptGenerator.prototype.app = function app() {
 
-  this.userName = this.user.git.username;
-  this.userEmail = this.user.git.email;
+  this.userName = this.user.git.name();
+  this.userEmail = this.user.git.email();
 
   this.mkdir('src');
   this.copy('src/template.coffee', 'src/' + this.scriptName + '.coffee');
