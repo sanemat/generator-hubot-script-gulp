@@ -1,5 +1,5 @@
 # generator-hubot-script-gulp
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image] [![Coverage Status][coveralls-image]][coveralls-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
 This repository forked from: [desmondmorris/generator-hubot-script](https://github.com/desmondmorris/generator-hubot-script)
 
@@ -50,10 +50,10 @@ Copyright (c) 2014 sanemat. [Licensed under the MIT license](./LICENSE)
 Copyright 2013 Desmond Morris. [Licensed under the MIT license](./generator-hubot-script/LICENSE)
 
 [npm-url]: https://npmjs.org/package/generator-hubot-script-gulp
-[npm-image]: https://badge.fury.io/js/generator-hubot-script-gulp.svg
+[npm-image]: http://img.shields.io/npm/v/generator-hubot-script-gulp.svg?style=flat
 [travis-url]: https://travis-ci.org/sanemat/generator-hubot-script-gulp
-[travis-image]: https://travis-ci.org/sanemat/generator-hubot-script-gulp.svg?branch=master
+[travis-image]: http://img.shields.io/travis/sanemat/generator-hubot-script-gulp/master.svg?style=flat
 [daviddm-url]: https://david-dm.org/sanemat/generator-hubot-script-gulp.svg?theme=shields.io
-[daviddm-image]: https://david-dm.org/sanemat/generator-hubot-script-gulp
+[daviddm-image]: http://img.shields.io/david/sanemat/generator-hubot-script-gulp.svg?style=flat
 [coveralls-url]: https://coveralls.io/r/sanemat/generator-hubot-script-gulp
-[coveralls-image]: https://coveralls.io/repos/sanemat/generator-hubot-script-gulp/badge.png
+[coveralls-image]: http://img.shields.io/coveralls/sanemat/generator-hubot-script-gulp/master.svg?style=flat

@@ -1,5 +1,5 @@
 # <%= appname %>
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
 <%= scriptDescription %>
 
@@ -25,7 +25,7 @@ hubot>> hello!
 ```
 
 [npm-url]: https://npmjs.org/package/<%= appname %>
-[npm-image]: http://img.shields.io/npm/v/<%= appname %>y.svg?style=flat
+[npm-image]: http://img.shields.io/npm/v/<%= appname %>.svg?style=flat
 [travis-url]: https://travis-ci.org/<%= userName %>/<%= appname %>
 [travis-image]: http://img.shields.io/travis/<%= userName %>/<%= appname %>/master.svg?style=flat
 [daviddm-url]: https://david-dm.org/<%= userName %>/<%= appname %>.svg?theme=shields.io
