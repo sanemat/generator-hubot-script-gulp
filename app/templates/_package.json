@@ -9,11 +9,11 @@
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/<%= appname %>.git"
+    "url": "https://github.com/<%= userName %>/<%= appname %>.git"
   },
 
   "bugs": {
-    "url": "https://github.com/hubot-scripts/<%= appname %>/issues"
+    "url": "https://github.com/<%= userName %>/<%= appname %>/issues"
   },
 
   "dependencies": {
