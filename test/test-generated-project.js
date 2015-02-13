@@ -1,3 +1,5 @@
+// See:
+// https://github.com/youngmountain/generator-node-gulp/blob/71b463f40a1afb169da09a41ff468b76a4c69d6c/test/test-generated-project.js
 /*global describe, beforeEach, it*/
 'use strict';
 
