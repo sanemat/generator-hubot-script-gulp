@@ -1,3 +1,9 @@
+## master
+
+Features:
+
+- Set current year as default in LICENSE (#42, @knjcode)
+
 ## 0.1.3 (2014-07-06)
 
 Fixes:
