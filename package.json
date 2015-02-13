@@ -23,7 +23,7 @@
     "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "dependencies": {
-    "yeoman-generator": "^0.17.0"
+    "yeoman-generator": "0.18.6"
   },
   "devDependencies": {
     "boolify-string": "^0.1.0",
