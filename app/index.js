@@ -74,6 +74,7 @@ HubotScriptGenerator.prototype.app = function app() {
 
   this.userName = this.user.git.name();
   this.userEmail = this.user.git.email();
+  this.currentYear = new Date().getFullYear();
 
   this.mkdir('src');
   this.copy('src/template.coffee', 'src/' + this.scriptName + '.coffee');
