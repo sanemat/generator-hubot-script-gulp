@@ -1,7 +1,7 @@
 {
   "name": "generator-hubot-script-gulp",
   "description": "Hubot script generator with gulp for yo",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": {
     "name": "Kenichi Sanemat Murahashi",
     "email": "o.gata.ken@gmail.com",
