@@ -17,7 +17,7 @@
   },
 
   "dependencies": {
-    "coffee-script": "^1.7.0"
+    "coffee-script": "^1.9.0"
   },
 
   "devDependencies": {
