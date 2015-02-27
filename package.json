@@ -9,7 +9,7 @@
   },
   "bugs": "https://github.com/sanemat/generator-hubot-script-gulp/issues",
   "dependencies": {
-    "yeoman-generator": "0.18.6"
+    "yeoman-generator": "^0.18.9"
   },
   "devDependencies": {
     "boolify-string": "^0.1.0",
