@@ -9,7 +9,7 @@
   },
   "bugs": "https://github.com/sanemat/generator-hubot-script-gulp/issues",
   "dependencies": {
-    "yeoman-generator": "0.18.6"
+    "yeoman-generator": "^0.19.1"
   },
   "devDependencies": {
     "boolify-string": "^0.1.0",
@@ -22,12 +22,12 @@
     "gulp-coffeelint": "^0.4.0",
     "gulp-espower": "^0.10.0",
     "gulp-if": "^1.2.1",
-    "gulp-istanbul": "^0.6.0",
+    "gulp-istanbul": "^0.8.1",
     "gulp-jscs": "^1.4.0",
     "gulp-jshint": "^1.6.3",
-    "gulp-load-plugins": "^0.8.0",
+    "gulp-load-plugins": "^0.10.0",
     "gulp-mocha": "^2.0.0",
-    "gulp-plumber": "^0.6.3",
+    "gulp-plumber": "^1.0.0",
     "gulp-sourcemaps": "^1.3.0",
     "gulp-util": "^3.0.3",
     "jshint-stylish": "^1.0.0"
